@@ -34,9 +34,20 @@ h1 {
   color: #fff;
   font-weight: bold;
   width: 30%; 
+  text-align: center;
 }
 
 .info-table .value {
   background-color: #fff; 
   color: #333;
+}
+
+.profile-picture {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .info-table .label {
+    white-space: pre-line;
+  }
 }

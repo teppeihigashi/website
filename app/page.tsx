@@ -36,18 +36,22 @@ export default function HomePage() {
           <tbody>
             <tr>
               <td className="label">プロフィール写真</td>
-              <td>
-                <Image
-                  src="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg"
-                  alt="Profile Picture"
-                  width={150} 
-                  height={190} 
-                />
+              <td className="profile-picture">
+                <a href="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg"
+                    alt="Profile Picture"
+                    width={150} 
+                    height={190} 
+                  />
+                </a>
               </td>
             </tr>
             {info.map((item, index) => (
               <tr key={index}>
-                <td className="label">{item.label}</td>
+                <td className="label">
+                  {item.label}
+                </td>
                 <td className="value">
                   {Array.isArray(item.value) ? item.value.join(', ') : item.value}
                 </td>

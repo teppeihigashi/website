@@ -49,7 +49,9 @@ export default function HomePage() {
             </tr>
             {info.map((item, index) => (
               <tr key={index}>
-                <td className="label">{item.label}</td>
+                <td className="label">
+                  {item.label}
+                </td>
                 <td className="value">
                   {Array.isArray(item.value) ? item.value.join(', ') : item.value}
                 </td>

@@ -35,13 +35,13 @@ export default function HomePage() {
         <table className="info-table">
           <tbody>
             <tr>
-              <td className="label">顔</td>
+              <td className="label">プロフィール写真</td>
               <td>
                 <Image
-                  src="/profile.jpg"
-                  alt="プロフィール写真"
-                  width={100}
-                  height={100}
+                  src="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg"
+                  alt="Profile Picture"
+                  width={150} 
+                  height={190} 
                 />
               </td>
             </tr>

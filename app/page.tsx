@@ -37,12 +37,14 @@ export default function HomePage() {
             <tr>
               <td className="label">プロフィール写真</td>
               <td>
-                <Image
-                  src="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg"
-                  alt="Profile Picture"
-                  width={150} 
-                  height={190} 
-                />
+                <a href="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg"
+                    alt="Profile Picture"
+                    width={150} 
+                    height={190} 
+                  />
+                </a>
               </td>
             </tr>
             {info.map((item, index) => (

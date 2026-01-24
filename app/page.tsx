@@ -36,7 +36,7 @@ export default function HomePage() {
           <tbody>
             <tr>
               <td className="label">プロフィール写真</td>
-              <td>
+              <td className="profile-picture">
                 <a href="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg" target="_blank" rel="noopener noreferrer">
                   <Image
                     src="https://higashigiken-pfp.s3.ap-northeast-1.amazonaws.com/images/pfp.jpg"

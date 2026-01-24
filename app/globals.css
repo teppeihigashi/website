@@ -45,3 +45,9 @@ h1 {
 .profile-picture {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .info-table .label {
+    white-space: pre-line;
+  }
+}
